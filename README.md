@@ -1,2 +1,2 @@
 # simplestart
-SimpleStart - build webpage and display data easily
+SimpleStart - Easily Build Webpages and Display Data
