@@ -58,3 +58,4 @@ ss.button("Test", onclick=myclick)
 - **在线演示**:  [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) 在线演示，体验 SimpleStart 的功能.
 - **机器学习示例**:  [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02) 机器学习示例，了解如何在该领域应用 SimpleStart.
 - **演示源代码**: 所有演示代码也包含在这个 GitHub 仓库中.
+- [Online Help](http://www.simplestart.cc)
