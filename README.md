@@ -56,5 +56,5 @@ ss.button("Test", onclick=myclick)
 
 - **Home Page**: Visit our official website at [http://www.simplestart.cc](http://www.simplestart.cc) for more information about SimpleStart.
 - **Online Demo**: Explore our online demo at [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) to see SimpleStart in action.
-- **Machine Learning Example**: Check out a machine learning example at [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02) to see how SimpleStart can be applied in this domain.
+- **Machine Learning Example**: Check out a machine learning example at [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02en) to see how SimpleStart can be applied in this domain.
 - **Source Code**: All demo code is also included in this GitHub repository.
