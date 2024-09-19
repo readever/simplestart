@@ -56,5 +56,5 @@ ss.button("Test", onclick=myclick)
 
 - **主页**: <a href="http://www.simplestart.cc" rel="nofollow" target="_blank">SimpleStart 主页</a> 访问主页获取有关 SimpleStart 的更多信息.
 - **在线演示**:  <a href="http://demo.simplestart.cc/demo01" rel="nofollow" target="_blank">SimpleStart Online Demo</a> 在线演示，体验 SimpleStart 的功能.
-- **机器学习示例**:  <a href="http://demo.simplestart.cc/demo02en" rel="nofollow" target="_blank">Iris Classification Demo</a> 机器学习示例，了解如何在该领域应用 SimpleStart.
+- **机器学习示例**:  <a href="http://demo.simplestart.cc/demo02" rel="nofollow" target="_blank">Iris Classification Demo</a> 机器学习示例，了解如何在该领域应用 SimpleStart.
 - **演示源代码**: 所有演示代码也包含在这个 GitHub 仓库中.
