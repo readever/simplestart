@@ -1,0 +1,40 @@
+<!--
+this example on "Code snippet: create Components without any frontend tooling (no React, Babel, Webpack, etc)"
+is copied from streamlit and modified, you can find it at
+https://discuss.streamlit.io/t/code-snippet-create-components-without-any-frontend-tooling-no-react-babel-webpack-etc/13064
+-->
+
+<html>
+    
+<head>
+    <script src="pybridge.js"></script>
+</head>
+    
+<body style="height:100px">
+    <input id="myinput" value="" autocomplete="off" placeholder="Enter text and press enter" />
+</body>
+    
+<script>
+    var myInput = document.getElementById("myinput");
+
+    myInput.addEventListener("change", function() {
+        ////将消息发送给Python端
+        sendDataToPython({
+            value: myInput.value,
+        });
+    })
+    
+    //接受来自Python端的消息消息
+    window.addEventListener("message", onDataFromPython);
+    
+    function onDataFromPython(event) {
+        var data = event.data.arg;
+        if (event.data.type !== "pypost") return;
+            myInput.value = data.my_input_value;  // Access values sent from Python here!
+    }
+    
+    //如果系统设置失败，可以手工设置高度
+    //setFrameHeight(200);
+</script>
+
+</html>
