@@ -1,19 +1,53 @@
 # SimpleStart
-SimpleStart - Easily Build Webpages and Display Data
+SimpleStart - Easily implement web development and data visualization with Python, an alternative to Streamlit.
 
 ## What is SimpleStart
+SimpleStart is designed for both beginners and experienced developers. It is a powerful tool that enables web application development using Python in the backend, without requiring front-end programming knowledge. You can easily create rich applications without any HTML, CSS, JavaScript, or Ajax skills.
 
-SimpleStart is a Python library for quickly building webpages and displaying data, without prior knowledge of front-end web development. With SimpleStart, you can develop web applications in Python in just minutes. It allows users to leverage the power and simplicity of Python to create functional webpages and visualize data.
+It offers a variety of components like text, buttons, lists, tables, audio, and video, with customizable layouts. Additionally, SimpleStart supports data visualization through images, tables, and plot charts.
 
-### Key Features
+## Key Features
 
-1. Develop frontend webpages and process data using Python
-2. Rich set of components and ability to create custom components
-3. Data visualizations, charts, and support for audio/video playback
-4. Build for desktop and mobile platforms
-5. Quick installation, development, debugging and deployment
+- Supports event response and data-driven applications
+- Easily supports multi-page applications
+- Rich set of components with the ability to create custom ones
+- Data visualizations and charts
+- Quick installation, development, debugging, and deployment
 
+## Getting Started
 
-## Installation
+### Installation
 
-sgsdfdsfs
+```bash
+pip3 install simplestart
+```
+
+### Run Example
+```bash
+ss app.py
+```
+or
+```bash
+ss app.py --port 8000
+```
+
+## Quickstart
+
+Here’s a simple example demonstrating how to create a basic web application using SimpleStart:
+
+```python
+import simplestart as ss
+
+def myclick(event):
+    ss.message("clicked")
+
+ss.write("Hello, world")
+ss.button("Test", onclick=myclick)
+```
+
+## Links
+
+- **Home Page**: Visit our official website at [http://www.simplestart.cc](http://www.simplestart.cc) for more information about SimpleStart.
+- **Online Demo**: Explore our online demo at [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) to see SimpleStart in action.
+- **Machine Learning Example**: Check out a machine learning example at [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02) to see how SimpleStart can be applied in this domain.
+- **Source Code**: All demo code is also included in this GitHub repository.
