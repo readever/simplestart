@@ -58,3 +58,4 @@ ss.button("Test", onclick=myclick)
 - **Online Demo**: Explore our online demo at [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) to see SimpleStart in action.
 - **Machine Learning Example**: Check out a machine learning example at [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02en) to see how SimpleStart can be applied in this domain.
 - **Source Code**: All demo code is also included in this GitHub repository.
+- **test** <a href="http://demo.simplestart.cc/demo02en" rel="nofollow" target="_blank">Iris Classification Demo</a>
