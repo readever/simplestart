@@ -1,6 +1,6 @@
 <h4 align="center">
     <p>
-        <a href="readme.md">English</a> |
+        <a href="[readme](https://github.com/readever/simplestart/blob/main/README.md">English</a> |
         <b>中文（简体）</b>
     <p>
 </h4>
