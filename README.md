@@ -56,5 +56,6 @@ ss.button("Test", onclick=myclick)
 
 - **Home Page**: Visit our official website at <a href="http://www.simplestart.cc" rel="nofollow" target="_blank">SimpleStart Home Page</a> for more information about SimpleStart.
 - **Online Demo**: Explore our online demo at <a href="http://demo.simplestart.cc/demo01" rel="nofollow" target="_blank">SimpleStart Online Demo</a> to see SimpleStart in action.
-- **Machine Learning Example**: Check out a machine learning example at <a href="http://demo.simplestart.cc/demo02en" rel="nofollow" target="_blank">Iris Classification Demo</a> to see how SimpleStart can be applied in this domain.
+- **Machine Learning Example**:
+  Check out a machine learning example at <a href="http://demo.simplestart.cc/demo02en" rel="nofollow" target="_blank">Iris Classification Demo</a> to see how SimpleStart can be applied in this domain.
 - **Source Code**: All demo code is also included in this GitHub repository.
