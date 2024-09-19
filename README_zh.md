@@ -1,46 +1,46 @@
 <h4 align="center">
     <p>
-        <a href="[readme](https://github.com/readever/simplestart/blob/main/README.md">English</a> |
+        <a href="https://github.com/readever/simplestart/blob/main/README.md">English</a> |
         <b>中文（简体）</b>
     <p>
 </h4>
 
 # SimpleStart
-SimpleStart - Easily implement web development and data visualization with Python, an alternative to Streamlit.
+SimpleStart - 使用 Python 轻松实现网页开发和数据可视化，是 Streamlit 的替代方案。
 
-## What is SimpleStart
-SimpleStart is designed for both beginners and experienced developers. It is a powerful tool that enables web application development using Python in the backend, without requiring front-end programming knowledge. You can easily create rich applications without any HTML, CSS, JavaScript, or Ajax skills.
+## 什么是 SimpleStart
+SimpleStart 旨在服务于初学者和经验丰富的开发者。它是一个强大的工具，可以使用 Python 在后端进行网页应用开发，无需前端编程知识。您可以轻松创建丰富的应用程序，而无需任何 HTML、CSS、JavaScript 或 Ajax 技能。
 
-It offers a variety of components like text, buttons, lists, tables, audio, and video, with customizable layouts. Additionally, SimpleStart supports data visualization through images, tables, and plot charts.
+它提供多种组件，如文本、按钮、列表、表格、音频和视频，并具备可定制的布局。此外，SimpleStart 还支持通过图像、表格和图表进行数据可视化。
 
-## Key Features
+## 主要特性
 
-- Supports event response and data-driven applications
-- Easily supports multi-page applications
-- Rich set of components with the ability to create custom ones
-- Data visualizations and charts
-- Quick installation, development, debugging, and deployment
+- 支持事件响应和数据驱动应用
+- 轻松支持多页面应用
+- 丰富的组件集，能够创建自定义组件
+- 数据可视化和图表
+- 快速安装、开发、调试和部署
 
-## Getting Started
+## 入门指南
 
-### Installation
+### 安装
 
 ```bash
 pip3 install simplestart
 ```
 
-### Run Example
+### 运行示例
 ```bash
 ss app.py
 ```
-or
+或者
 ```bash
 ss app.py --port 8000
 ```
 
-## Quickstart
+## 快速开始
 
-Here’s a simple example demonstrating how to create a basic web application using SimpleStart:
+以下是一个简单示例，演示如何使用 SimpleStart 创建基本网页应用:
 
 ```python
 import simplestart as ss
@@ -52,9 +52,9 @@ ss.write("Hello, world")
 ss.button("Test", onclick=myclick)
 ```
 
-## Links
+## 链接
 
-- **Home Page**: Visit our official website at [http://www.simplestart.cc](http://www.simplestart.cc) for more information about SimpleStart.
-- **Online Demo**: Explore our online demo at [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) to see SimpleStart in action.
-- **Machine Learning Example**: Check out a machine learning example at [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02) to see how SimpleStart can be applied in this domain.
-- **Source Code**: All demo code is also included in this GitHub repository.
+- **主页**: [http://www.simplestart.cc](http://www.simplestart.cc) 访问主页获取有关 SimpleStart 的更多信息.
+- **在线演示**:  [http://demo.simplestart.cc/demo01](http://demo.simplestart.cc/demo01) 在线演示，体验 SimpleStart 的功能.
+- **机器学习示例**:  [http://demo.simplestart.cc/demo02](http://demo.simplestart.cc/demo02) 机器学习示例，了解如何在该领域应用 SimpleStart.
+- **演示源代码**: 所有演示代码也包含在这个 GitHub 仓库中.
