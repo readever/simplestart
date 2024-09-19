@@ -1,7 +1,7 @@
 <h4 align="center">
     <p>
         <b>English</b> |
-        <a href="README_cn.md">中文（简体）</a>
+        <a href="https://github.com/readever/simplestart/blob/main/README_zh.md">中文（简体）</a>
     <p>
 </h4>
 
