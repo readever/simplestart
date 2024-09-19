@@ -1,3 +1,10 @@
+<h4 align="center">
+    <p>
+        <b>English</b> |
+        <a href="readme_cn.md">中文（简体）</a>
+    <p>
+</h4>
+
 # SimpleStart
 SimpleStart - Easily implement web development and data visualization with Python, an alternative to Streamlit.
 
