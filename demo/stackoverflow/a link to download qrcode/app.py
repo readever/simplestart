@@ -1,3 +1,6 @@
+# this is demo is based on the topic discussed on stackoverflow
+# https://stackoverflow.com/questions/78045476/streamlit-re-runs-app-on-button-click-delaying-download/79008691#79008691
+
 import simplestart as ss
 import qrcode
 from io import BytesIO
