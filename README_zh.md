@@ -61,10 +61,10 @@ ss.button("Test", onclick=myclick)
 ![图像显示](./resources/ezgif-images.gif)
 
 ### 3. 表格显示
-![表格显示(./resources/ezgif-table.gif)
+![表格显示](./resources/ezgif-table.gif)
 
 ### 4. 图表显示
-![图表显示(./resources/Bokeh-Scatter.gif)
+![图表显示](./resources/Bokeh-Scatter.gif)
 
 ## 链接
 
