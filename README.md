@@ -52,6 +52,21 @@ ss.write("Hello, world")
 ss.button("Test", onclick=myclick)
 ```
 
+## Effect Demonstration
+
+### 1. Button and Event Handling
+![Button Style and Event Handling](./resources/ezgif-button.gif)
+
+### 2. Image Display
+![Image Display](./resources/ezgif-images.gif)
+
+### 3. Table Display
+![Table Display](./resources/ezgif-1-table.gif)
+
+### 4. Chart Display
+![Chart Display](./resources/Bokeh-Scatter.gif)
+
+
 ## Links
 
 - **Home Page**: Visit our official website at <a href="http://www.simplestart.cc" rel="nofollow" target="_blank">SimpleStart Home Page</a> for more information about SimpleStart.
