@@ -55,7 +55,7 @@ ss.button("Test", onclick=myclick)
 ## 效果展示
 
 ### 1. 按钮和事件处理
-![按钮样式和事件处理](./resource/ezgif-button.gif)
+![按钮样式和事件处理](./resources/ezgif-button.gif)
 
 ## 链接
 
