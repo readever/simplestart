@@ -52,6 +52,11 @@ ss.write("Hello, world")
 ss.button("Test", onclick=myclick)
 ```
 
+## 效果展示
+
+### 1. 按钮和事件处理
+
+
 ## 链接
 
 - **主页**: <a href="http://www.simplestart.cc/zh" rel="nofollow" target="_blank">SimpleStart 主页</a> 访问主页获取有关 SimpleStart 的更多信息.
