@@ -57,6 +57,15 @@ ss.button("Test", onclick=myclick)
 ### 1. 按钮和事件处理
 ![按钮样式和事件处理](./resources/ezgif-button.gif)
 
+### 2. 图像显示
+![图像显示](./resources/ezgif-images.gif)
+
+### 3. 表格显示
+![表格显示(./resources/ezgif-table.gif)
+
+### 4. 图表显示
+![图表显示(./resources/Bokeh-Scatter.gif)
+
 ## 链接
 
 - **主页**: <a href="http://www.simplestart.cc/zh" rel="nofollow" target="_blank">SimpleStart 主页</a> 访问主页获取有关 SimpleStart 的更多信息.
