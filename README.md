@@ -8,7 +8,6 @@ SimpleStart is a Python framework designed for developers, data analysts, and en
 
 Visit website for more demos and examples: <a href="http://www.simplestart.cc" target="_blank">SimpleStart Official Website</a>
 
-
 ## 🚀 Key Features
 
 - **Pure Python Development**: Build fully functional web interfaces using only Python code. No frontend build tools or knowledge required.
@@ -16,7 +15,6 @@ Visit website for more demos and examples: <a href="http://www.simplestart.cc" t
 - **Rich Component Library**: Comes with a comprehensive set of pre-built components including tables, forms, buttons, layouts, and media elements.
 - **Event-Driven Architecture**: easily handle user interactions with simple `onclick` and `onchange` bindings.
 - **Modern Web Standards**: Built on top of modern web technologies to ensure high performance and a native-like user experience.
-
 
 ## ⚡ Quick Start
 
@@ -50,25 +48,15 @@ python app.py
 
 Access your app in your browser at `http://localhost:8000`.
 
-
-## 🎥 Demo
+## Demo
 
 Here are some examples of what you can build with SimpleStart:
 
-### 1. Data Visualization Dashboard
-- **Description**: Interactive dashboard with charts and tables for data analysis
-- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/dashboard){:target="_blank"}
-- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/dashboard-demo){:target="_blank"}
+### 1. Machine Learning Playground
 
-### 2. Machine Learning Playground
-- **Description**: Interactive ML model training and visualization tool
-- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/ml-playground){:target="_blank"}
-- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/ml-playground){:target="_blank"}
+- **Description**: Iris classification prediction tool with real-time model evaluation
+- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/ml-playground){:target="\_blank"}
+- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/ml-playground){:target="\_blank"}
 
-### 3. Form Builder
-- **Description**: Drag-and-drop form builder with real-time preview
-- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/form-builder){:target="_blank"}
-- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/form-builder){:target="_blank"}
 
-Visit our [official website](http://www.simplestart.cc){:target="_blank"} for more demos and examples!
-
+Visit our [official website](http://www.simplestart.cc){:target="\_blank"} for more demos and examples!
