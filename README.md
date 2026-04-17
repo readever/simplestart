@@ -51,7 +51,24 @@ python app.py
 Access your app in your browser at `http://localhost:8000`.
 
 
-## License
+## 🎥 Demo
 
-MIT
-This project is licensed under the MIT License.
+Here are some examples of what you can build with SimpleStart:
+
+### 1. Data Visualization Dashboard
+- **Description**: Interactive dashboard with charts and tables for data analysis
+- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/dashboard){:target="_blank"}
+- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/dashboard-demo){:target="_blank"}
+
+### 2. Machine Learning Playground
+- **Description**: Interactive ML model training and visualization tool
+- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/ml-playground){:target="_blank"}
+- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/ml-playground){:target="_blank"}
+
+### 3. Form Builder
+- **Description**: Drag-and-drop form builder with real-time preview
+- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/form-builder){:target="_blank"}
+- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/form-builder){:target="_blank"}
+
+Visit our [official website](http://www.simplestart.cc){:target="_blank"} for more demos and examples!
+
