@@ -52,11 +52,11 @@ Access your app in your browser at `http://localhost:8000`.
 
 Here are some examples of what you can build with SimpleStart:
 
-### 1. Machine Learning Playground
+### 1. Machine Learning Demo
 
-- **Description**: Iris classification prediction tool with real-time model evaluation
-- **Online Demo**: [View Demo](http://www.simplestart.cc/demos/ml-playground){:target="\_blank"}
-- **Source Code**: [GitHub Repository](https://github.com/simplestart-cc/ml-playground){:target="\_blank"}
+- **Description**: Iris classification demo using the KNN algorithm.
+- **Online Demo**: <a href="http://www.simplestart.cc/demos/ml-playground" target="_blank">View Demo</a>
+- **Source Code**: <a href="https://github.com/simplestart-cc/ml-playground" target="_blank">GitHub Repository</a>
 
 
 Visit our [official website](http://www.simplestart.cc){:target="\_blank"} for more demos and examples!
