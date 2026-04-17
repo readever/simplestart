@@ -10,7 +10,6 @@ Visit website for more demos and examples:
 
 <http://www.simplestart.cc>
 
-<hr style="border: none; border-top: 1px solid #e0e0e0;">
 
 ## 🚀 Key Features
 
@@ -20,7 +19,6 @@ Visit website for more demos and examples:
 - **Event-Driven Architecture**: easily handle user interactions with simple `onclick` and `onchange` bindings.
 - **Modern Web Standards**: Built on top of modern web technologies to ensure high performance and a native-like user experience.
 
-***
 
 ## ⚡ Quick Start
 
@@ -54,7 +52,6 @@ python app.py
 
 Access your app in your browser at `http://localhost:8000`.
 
-***
 
 ## License
 
