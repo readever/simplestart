@@ -6,9 +6,7 @@ SimpleStart is a Python framework designed for developers, data analysts, and en
 
 ## Online Help
 
-Visit website for more demos and examples:
-
-<http://www.simplestart.cc>
+Visit website for more demos and examples: <http://www.simplestart.cc>
 
 
 ## 🚀 Key Features
