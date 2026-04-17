@@ -12,8 +12,8 @@ Visit website for more demos and examples: <a href="http://www.simplestart.cc" t
 
 - **Pure Python Development**: Build fully functional web interfaces using only Python code. No frontend build tools or knowledge required.
 - **Reactive Data Binding**: The UI automatically updates when your Python variables change, making state management effortless.
-- **Rich Component Library**: Comes with a comprehensive set of pre-built components including tables, forms, buttons, layouts, and media elements.
-- **Event-Driven Architecture**: easily handle user interactions with simple `onclick` and `onchange` bindings.
+- **Rich Component Library**: Comes with a comprehensive set of pre-built components, including tables, forms, buttons, layouts, and media elements.
+- **Event-Driven Architecture**: Easily handle user interactions with simple onclick and onchange bindings.
 - **Modern Web Standards**: Built on top of modern web technologies to ensure high performance and a native-like user experience.
 
 ## ⚡ Quick Start
