@@ -59,4 +59,3 @@ Here are some examples of what you can build with SimpleStart:
 - **Source Code**: <a href="https://github.com/simplestart-cc/ml-playground" target="_blank">GitHub Repository</a>
 
 
-Visit our [official website](http://www.simplestart.cc){:target="\_blank"} for more demos and examples!
