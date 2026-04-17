@@ -1,4 +1,4 @@
-'''title: 交互式预测
+'''title: Interactive Prediction
 order_name: 004 prediction
 '''
 
@@ -6,31 +6,31 @@ import simplestart as ss
 from sklearn.datasets import load_iris
 import numpy as np
 
-#1 页面文本内容
+#1 Page Text Content
 
 md_content = """
 
-### 交互式预测实验
+### Interactive Prediction Experiment
 
-本页面用于验证训练好的 KNN 模型在推理阶段的实际表现。通过调整输入特征参数，您可以观察模型在不同数据组合下的分类决策及置信度变化。
+This page is used to verify the actual performance of the trained KNN model during the inference phase. By adjusting the input feature parameters, you can observe the classification decisions and confidence changes of the model under different data combinations.
 
-#### 参数设置与预测
+#### Parameter Settings and Prediction
 
-请调整下方滑块以输入鸢尾花的几何特征（单位：cm）。系统将根据您输入的数值，实时计算并显示预测结果。
+Please adjust the sliders below to input the geometric features of the iris flower (unit: cm). The system will calculate and display the prediction results in real-time based on the values you input.
 
-{slot#slot_slider#此处为滑块组件插槽：包含花萼长度、花萼宽度、花瓣长度、花瓣宽度四个滑块}
+{slot#slot_slider#This is the slider component slot: containing four sliders for sepal length, sepal width, petal length, and petal width}
 
 ---
 
-#### 预测结果
+#### Prediction Results
 
-{slot#slot_result#此处为预测结果展示插槽：显示预测品种名称及置信度数值}
+{slot#slot_result#This is the prediction result display slot: showing the predicted species name and confidence value}
 
-#### 预测说明
-1. **参数调整**：通过滑块调整花萼和花瓣的尺寸，系统会实时更新预测结果。
-2. **模型使用**：预测使用的是在模型训练页面训练的 KNN 模型。
-3. **置信度计算**：置信度基于 KNN 算法中最近邻的距离计算得出，值越高表示预测越可靠。
-4. **结果解释**：预测结果显示了模型认为最可能的鸢尾花品种及其置信度。
+#### Prediction Notes
+1. **Parameter Adjustment**: Adjust the sepal and petal dimensions using the sliders, and the system will update the prediction results in real-time.
+2. **Model Usage**: The prediction uses the KNN model trained on the Model Training page.
+3. **Confidence Calculation**: The confidence is calculated based on the distances of the nearest neighbors in the KNN algorithm. A higher value indicates a more reliable prediction.
+4. **Result Interpretation**: The prediction result shows the iris species that the model considers most likely and its confidence level.
 
 """
 
@@ -39,17 +39,17 @@ row.start()
 
 md = ss.md(md_content)
 
-#2 代码逻辑
+#2 Code Logic
 ss.session.warning_str = ""
-ss.session.sepal_length = 5.0  # 设置合理的初始值
-ss.session.sepal_width = 3.3   # 设置合理的初始值
-ss.session.petal_length = 1.4  # 设置合理的初始值
-ss.session.petal_width = 0.2   # 设置合理的初始值
+ss.session.sepal_length = 5.0  # Set reasonable initial values
+ss.session.sepal_width = 3.3   # Set reasonable initial values
+ss.session.petal_length = 1.4  # Set reasonable initial values
+ss.session.petal_width = 0.2   # Set reasonable initial values
 
-# 定义鸢尾花品种名称
+# Define iris species names
 species_names = ['Setosa', 'Versicolour', 'Virginica']
 
-# 通用的特征变化处理函数
+# Generic feature change handler function
 def on_feature_change(event):
     feature_name = event.data["name"]
     
@@ -67,7 +67,7 @@ def on_feature_change(event):
 def update_prediction():
     if hasattr(ss.store, 'model') and ss.store.model is not None:
         ss.session.warning_str = ""
-        # 准备输入数据
+        # Prepare input data
         input_data = [[
             ss.session.sepal_length,
             ss.session.sepal_width,
@@ -75,56 +75,56 @@ def update_prediction():
             ss.session.petal_width
         ]]
         
-        # 预测
+        # Prediction
         prediction = ss.store.model.predict(input_data)[0]
         species = species_names[prediction]
         
-        # 计算置信度（使用KNN的距离作为简单的置信度指标）
+        # Calculate confidence (using KNN distances as a simple confidence indicator)
         distances, indices = ss.store.model.kneighbors(input_data)
-        confidence = 1.0 / (1.0 + np.mean(distances))  # 简单的置信度计算
+        confidence = 1.0 / (1.0 + np.mean(distances))  # Simple confidence calculation
         
-        # 更新会话变量
+        # Update session variables
         ss.session.prediction = species
         ss.session.confidence = confidence
     else:
-        ss.session.warning_str = "请先在模型训练页面训练模型"
+        ss.session.warning_str = "Please train the model on the Model Training page first"
         ss.session.prediction = ""
         ss.session.confidence = 0
 
 #ui
-# 输入参数
+# Input parameters
 with md.slot("slot_slider"):
     container = ss.container(color = "#fafcff", width = 600, direction = "column")
     container.start()
 
-    # 花萼长度
-    ss.text("花萼长度:")
+    # Sepal Length
+    ss.text("Sepal Length:")
     ss.slider(value=5.0,min=4.0,max=8.0,step=0.1,onchange=on_feature_change,eventData= {"name":"sepal_length"}, show_input=True, marks={4: '4cm', 8: '8cm'})
 
     
     ss.space("mb-4")
     
-    # 花萼宽度
-    ss.text("花萼宽度:")
+    # Sepal Width
+    ss.text("Sepal Width:")
     ss.slider(value=3.3,min=2.0,max=4.5,step=0.1, onchange=on_feature_change,eventData= {"name":"sepal_width"}, show_input=True, marks={2: '2cm', 4.5: '4.5cm'})
 
     
     ss.space("mb-4")
     
-    # 花瓣长度
-    ss.text("花瓣长度:")
+    # Petal Length
+    ss.text("Petal Length:")
     ss.slider(value=1.4,min=1.0,max=7.0,step=0.1,onchange=on_feature_change,eventData= {"name":"petal_length"}, show_input=True, marks={1: '1cm', 7: '7cm'})
 
     
     ss.space("mb-4")
     
-    # 花瓣宽度
-    ss.text("花瓣宽度:")
+    # Petal Width
+    ss.text("Petal Width:")
     ss.slider(value=0.2,min=0.1,max=2.5,step=0.1,onchange=on_feature_change,eventData= {"name":"petal_width"}, show_input=True, marks={0.1: '0.1cm', 2.5: '2.5cm'})
     container.end()
 
 with md.slot("slot_result"):
-    ss.text(f"预测品种: @prediction  置信度: @confidence")
+    ss.text(f"Predicted Species: @prediction  Confidence: @confidence")
     ss.text("@warning_str", tag = "mark")
 
 row.end()

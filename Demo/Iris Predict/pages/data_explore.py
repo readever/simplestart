@@ -1,4 +1,4 @@
-'''title: 数据探索
+'''title: Data Exploration
 order_name: 002 data_exploration
 '''
 
@@ -6,42 +6,42 @@ import simplestart as ss
 from sklearn.datasets import load_iris
 import pandas as pd
 
-# 数据探索页面的内容排版
+# Content layout for data exploration page
 md_content = """
-### 鸢尾花数据集探索分析
+### Iris Dataset Exploration and Analysis
 
-#### 1. 数据概览
-这是机器学习中经典的分类数据集，包含了 3 种不同品种的鸢尾花各 50 朵，共 150 个样本。
-我们首先来看一下原始数据的前几行：
+#### 1. Data Overview
+This is a classic classification dataset in machine learning, containing 50 samples each of 3 different species of iris flowers, totaling 150 samples.
+Let's first look at the first few rows of the original data:
 
-{slot#data_table#这里将显示前20行数据}
+{slot#data_table#The first 20 rows of data will be displayed here}
 
 ---
 
-#### 2. 特征分布可视化：花萼长宽关系
-为了直观地理解不同品种在形态上的差异，我们选取了 **花萼长度** 和 **花萼宽度** 这两个特征进行散点图分析。
+#### 2. Feature Distribution Visualization: Sepal Length vs Width
+To intuitively understand the morphological differences between different species, we selected **sepal length** and **sepal width** for scatter plot analysis.
 
-请观察下方的散点图：
+Please observe the scatter plot below:
 
-{slot#scatter_plot#这里将显示散点图，展示不同品种的花萼长宽关系。}
+{slot#scatter_plot#The scatter plot showing the sepal length and width relationships of different species will be displayed here.}
 
 ::: primary
-**💡 解读**
-**蓝色点 (Setosa)**：聚集在左上角，说明山鸢尾的花萼通常较短但较宽, 比较容易将其与其他两类区分开。
-**橙色点 (Versicolor) & 绿色点 (Virginica)**：主要分布在右下侧，且两者在分布上存在一定的重叠。
+**💡 Interpretation**
+**Blue dots (Setosa)**: Clustered in the upper left, indicating that setosa irises typically have shorter but wider sepals, making them relatively easy to distinguish from the other two classes.
+**Orange dots (Versicolor) & Green dots (Virginica)**: Mainly distributed on the lower right side, and there is some overlap between their distributions.
 :::
 
 ---
 
-#### 3. 统计特征分析
-除了可视化，我们还计算了数值特征的统计摘要。下表展示了各个特征的均值、标准差、最小值和最大值。
+#### 3. Statistical Feature Analysis
+In addition to visualization, we have also calculated statistical summaries of the numerical features. The table below shows the mean, standard deviation, minimum, and maximum values of each feature.
 
-{slot#describe_table#这里将显示数值特征的统计摘要。}
+{slot#describe_table#The statistical summary of numerical features will be displayed here.}
 
 ---
 
-#### 4. 结论
-通过上述探索，我们可以发现 **Setosa** 品种在线性可分性上表现最好，仅凭花萼的长宽就能很容易将其与其他两类区分开。而对于 **Versicolor** 和 **Virginica**，可能需要引入花瓣（Petal）的相关特征才能获得更好的分类效果。
+#### 4. Conclusion
+Through this exploration, we can find that the **Setosa** species performs best in linear separability, as it can be easily distinguished from the other two classes based on sepal length and width alone. For **Versicolor** and **Virginica**, it may be necessary to introduce petal-related features to achieve better classification results.
 
 """
 
@@ -51,62 +51,62 @@ row.start()
 md = ss.markdown(md_content)
 
 
-# 代码逻辑
+# Code Logic
 
-# 加载 Iris 数据集
+# Load Iris dataset
 iris = load_iris()
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df['species'] = iris.target
 df['species'] = df['species'].map({0: 'Setosa', 1: 'Versicolour', 2: 'Virginica'})
 
 
-# 显示数据表格（前20行）
+# Display data table (first 20 rows)
 with md.slot("data_table"):
-    # 使用 simplestart 的表格组件，或者直接显示 pandas 样式
+    # Using simplestart table component or displaying pandas style
     ss.table(tableData=df.head(20), width = 800, height = 250, stripe=True)
 
-# 显示散点图（花萼长宽关系）
+# Display scatter plot (sepal length vs width)
 with md.slot("scatter_plot"):
-    # 使用 simplestart 的散点图组件
+    # Using simplestart scatter plot component
  
-    # 准备散点图数据
+    # Prepare scatter plot data
     x_data = df['sepal length (cm)'].tolist()
     y_data = df['sepal width (cm)'].tolist()
     hue_data = df['species'].tolist()
 
-    # 绘制散点图（使用 hue_data 参数）
+    # Draw scatter plot (using hue_data parameter)
     ss.plot.scatter(
         x=x_data,
         y=y_data,
-        title="Iris 散点图",
-        x_label="花萼长度 (cm)",
-        y_label="花萼宽度 (cm)",
+        title="Iris Scatter Plot",
+        x_label="Sepal Length (cm)",
+        y_label="Sepal Width (cm)",
         hue_data=hue_data,
         width="700px",
         height="500px"
     )
     
-# 显示统计特征分析表格
+# Display statistical feature analysis table
 with md.slot("describe_table"):
-    # 计算统计摘要并添加中位数列
+    # Calculate statistical summary and add median column
     describe_df = df.describe()
-    # 对数值进行四舍五入，保留2位小数
+    # Round numerical values to 2 decimal places
     describe_df = describe_df.round(2)
 
-    # 将索引转换为列，以便在表格中显示
+    # Convert index to column for table display
     describe_df_reset = describe_df.reset_index()
-    # 重命名索引列
-    describe_df_reset = describe_df_reset.rename(columns={'index': '统计指标'})
+    # Rename index column
+    describe_df_reset = describe_df_reset.rename(columns={'index': 'Statistic'})
     
-    # 准备列配置
-    columns = [{'prop': '统计指标', 'label': '统计指标'}]
+    # Prepare column configuration
+    columns = [{'prop': 'Statistic', 'label': 'Statistic'}]
     for col in describe_df_reset.columns[1:]:
         columns.append({'prop': col, 'label': col})
     
-    # 转换为表格数据格式
+    # Convert to table data format
     table_data = describe_df_reset.to_dict('records')
     
-    # 使用 simplestart 的表格组件
+    # Using simplestart table component
     ss.table(tableData=table_data, columns=columns, width=800, stripe=True)
 
 row.end()

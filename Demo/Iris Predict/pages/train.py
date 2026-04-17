@@ -1,8 +1,8 @@
 '''
-title: 模型训练
+title: Model Training
 order_name: 003 train
 '''
-#参考 https://www.kaggle.com/code/nathsubhajit/iris-flower-classification
+# Reference: https://www.kaggle.com/code/nathsubhajit/iris-flower-classification
 
 import simplestart as ss
 import time
@@ -13,78 +13,78 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 
-# 1. 页面内容 Markdown 格式
-# 注意：我们在需要动态显示结果的地方预留了 {slot#xxx#提示文字}
+# 1. Page Content Markdown Format
+# Note: We reserve {slot#xxx#placeholder text} where we need to dynamically display results
 md_content = """
-### 模型训练实验室
+### Model Training Laboratory
 
-在开始预测之前，我们需要先“教”计算机如何识别花朵。本页面将展示如何使用 **K近邻算法 (KNN)** 对鸢尾花数据集进行完整的模型训练流程。
+Before starting predictions, we need to first "teach" the computer how to recognize flowers. This page will demonstrate how to use the **K-Nearest Neighbors (KNN)** algorithm to perform a complete model training process on the Iris dataset.
 
-#### 1. 核心原理：近朱者赤，近墨者黑
-KNN 算法的核心思想非常直观：如果一个样本在特征空间中与 **K 个最相邻** 的样本大多数属于同一类别，那么该样本也属于这个类别。
+#### 1. Core Principle: Birds of a Feather Flock Together
+The core idea of the KNN algorithm is very intuitive: if a sample in the feature space belongs to the same category as the majority of its **K nearest neighbors**, then that sample also belongs to that category.
 
-我们可以这样想象花朵在坐标系中的分布：
-- **Setosa**：特征独特，通常独自聚集在一个角落。
-- **Versicolor & Virginica**：特征较为相似，两者分布区域会有部分重叠。
-- **判别逻辑**：当我们遇到一朵“未知花朵”时，只需观察它**周围最近的 K 个邻居**，得票最多的类别就是它的身份。
+We can imagine the distribution of flowers in a coordinate system:
+- **Setosa**: Has distinct features, usually clustering in one corner.
+- **Versicolor & Virginica**: Have more similar features, and their distribution areas overlap partially.
+- **Discrimination Logic**: When we encounter an "unknown flower", we only need to observe the **K nearest neighbors around it**, and the category with the most votes is its identity.
 
-#### 2. 实验配置与数据划分
-为了科学地评估模型性能，我们遵循机器学习的标准流程——**留出法 (Hold-out)**。我们将 150 条原始数据按照 **7:3** 的比例进行随机切分：
+#### 2. Experimental Configuration and Data Splitting
+To scientifically evaluate model performance, we follow the standard machine learning workflow - **Hold-out Method**. We randomly split the 150 original samples in a **7:3** ratio:
 
-{slot#config#这里将显示参数配置表格}
+{slot#config#The parameter configuration table will be displayed here}
 
 
 ::: primary
-**💡 关于随机种子 (Random State)**
-这里的 `Random State` 用于控制数据打乱的随机性。固定该数值（如 42）可以确保每次运行时，训练集和测试集的划分完全一致，从而保证实验结果的**可复现性**。
+**💡 About Random State**
+The `Random State` here is used to control the randomness of data shuffling. Fixing this value (e.g., 42) ensures that the training and test set split is exactly the same each time, thus guaranteeing the **reproducibility** of experimental results.
 :::
 
-#### 3. 执行训练
-点击下方按钮，程序将自动执行以下步骤：
-1.  **数据加载**：读取鸢尾花数据集。
-2.  **数据切分**：根据上述配置划分为训练集和测试集。
-3.  **模型构建**：初始化 KNN 分类器（设置 K=5）。
-4.  **模型拟合**：在训练集上“学习”特征。
-5.  **模型评估**：在测试集上进行“考试”并计算准确率。
+#### 3. Execute Training
+Click the button below, and the program will automatically execute the following steps:
+1.  **Data Loading**: Load the Iris dataset.
+2.  **Data Splitting**: Split into training and test sets according to the above configuration.
+3.  **Model Construction**: Initialize the KNN classifier (set K=5).
+4.  **Model Fitting**: "Learn" features on the training set.
+5.  **Model Evaluation**: "Test" on the test set and calculate accuracy.
 
-{slot#train#这里将放置训练按钮}
-
----
-
-#### 5. 训练结果
-
-{slot#train_result#模型训练的结果将显示在这里...}
+{slot#train#The training button will be placed here}
 
 ---
 
-#### 6. 术语解释与结果解读
-- **准确率 (Accuracy)**
-    - 定义：模型预测正确的样本数占总样本数的比例。
-    - 解读：越接近 1.0 (100%) 代表模型效果越好。
+#### 5. Training Results
 
-- **混淆矩阵 (Confusion Matrix)**
-    - **对角线数值**：代表**预测正确**的数量。数值越大越好（理想状态是全在对角线上）。
-    - **非对角线数值**：代表**预测错误**的数量。例如，第二行第三列的数字表示将“Versicolor”错判为“Virginica”的样本数<em style="font-size: small">(随机种子是5的测试结果)</em>，该数值越小越好。
+{slot#train_result#The model training results will be displayed here...}
+
+---
+
+#### 6. Terminology Explanation and Result Interpretation
+- **Accuracy**
+    - Definition: The proportion of correctly predicted samples to the total number of samples.
+    - Interpretation: The closer to 1.0 (100%), the better the model performs.
+
+- **Confusion Matrix**
+    - **Diagonal values**: Represent the number of **correct predictions**. The larger, the better (ideal state is all on the diagonal).
+    - **Non-diagonal values**: Represent the number of **incorrect predictions**. For example, the number in the second row, third column represents the number of samples where "Versicolor" was incorrectly classified as "Virginica"<em style="font-size: small">(test result with random seed of 5)</em>. The smaller, the better.
 """
 
 row = ss.row(width="70%")
 row.start()
 
-# 渲染 Markdown
+# Render Markdown
 md = ss.markdown(md_content)
 
-#2 代码逻辑
+#2 Code Logic
 
-# 定义超参数
+# Define hyperparameters
 TEST_SIZE = 0.3
 RANDOM_STATE = 42
 K_NEIGHBORS = 5
 
-# 构造配置表格的 DataFrame
+# Construct DataFrame for configuration table
 config_data = {
-    '参数名称': ['算法模型', 'K 值 (邻居数)', '训练/测试比例', '随机种子', '距离度量'],
-    '设定值': ['KNN (K-Nearest Neighbors)', K_NEIGHBORS, '70% / 30%', "@random_state", 'Minkowski (p=2)'],
-    '说明': ['基于距离的分类算法', '决定投票范围的邻居数量', '105个样本用于训练，45个样本用于测试', '固定数据切分方式，确保结果可复现', '即欧几里得距离，计算直线距离']
+    'Parameter Name': ['Algorithm Model', 'K Value (Number of Neighbors)', 'Train/Test Ratio', 'Random State', 'Distance Metric'],
+    'Set Value': ['KNN (K-Nearest Neighbors)', K_NEIGHBORS, '70% / 30%', "@random_state", 'Minkowski (p=2)'],
+    'Description': ['Distance-based classification algorithm', 'Number of neighbors that determine the voting range', '105 samples for training, 45 samples for testing', 'Fix data splitting method to ensure reproducibility', 'i.e., Euclidean distance, calculating straight-line distance']
 }
 
 ### -----------------------
@@ -93,13 +93,13 @@ config_data = {
 cm_table = None
 ss.session.acc = ""
 
-# 定义训练逻辑
+# Define training logic
 def run_training():
     global cm_table
-    #with ss.spinner("模型正在训练中，请稍候..."):
-    time.sleep(1.5)  # 模拟耗时操作
+    #with ss.spinner("Model is being trained, please wait..."):
+    time.sleep(1.5)  # Simulate time-consuming operation
     
-    # --- 真实的机器学习代码 ---
+    # --- Real machine learning code ---
     iris = load_iris()
     RANDOM_STATE = ss.session.random_state
     X_train, X_test, y_train, y_test = train_test_split(
@@ -107,12 +107,11 @@ def run_training():
 
     
     knn = KNeighborsClassifier(n_neighbors=K_NEIGHBORS)
-    #开始训练模型
+    #Start training the model
     knn.fit(X_train, y_train)
     
-    # 保存训练好的模型到 Session State，以便在其他地方使用
+    # Save the trained model to Session State for use elsewhere
     ss.store.model = knn
-    
     
     y_pred = knn.predict(X_test)
     acc = accuracy_score(y_test, y_pred)
@@ -120,45 +119,45 @@ def run_training():
     print(f"accuracy: {acc:.4f}")
     # -----------------------
     
-    # 保存结果到 Session State，以便在其他地方使用
+    # Save results to Session State for use elsewhere
     ss.store.model = knn
     ss.session.acc = f"{acc:.4f}"
     ss.store.cm = cm
     ss.store.model_trained = True
     
-    # 更新训练结果显示
+    # Update training result display
     cm_df = pd.DataFrame(cm, index=['Setosa', 'Versicolour', 'Virginica'], 
                         columns=['Setosa', 'Versicolour', 'Virginica'])
 
-    # 更新混淆矩阵表格数据
+    # Update confusion matrix table data
     cm_table.prop.tableData = cm_df
 
 
 
-# config 插槽 -- 显示配置表格
+# config slot -- Display configuration table
 config_df = pd.DataFrame(config_data)
 with md.slot("config"):
     ss.table(config_df, width="80%", border=True)
 
 
-# train 插槽 -- 显示训练按钮
+# train slot -- Display training button
 with md.slot("train"):
-    ss.button("训练模型", type="primary", onclick=run_training)
+    ss.button("Train Model", type="primary", onclick=run_training)
 
 
-# train_result 插槽 -- 显示训练结果显示
+# train_result slot -- Display training result
 with md.slot("train_result"):
-    ss.write("**准确率**: @acc")
+    ss.write("**Accuracy**: @acc")
 
-    ss.write("**混淆矩阵**:")
+    ss.write("**Confusion Matrix**:")
 
-    # 显示混淆矩阵
+    # Display confusion matrix
     cm_table = ss.table(pd.DataFrame(), width=400, border=True)
 
 row.end()
 
 
-#侧边栏
+#Sidebar
 import random
 ss.session.random_state = 5
 def shuffle_random():
@@ -168,6 +167,7 @@ def reset_random_state():
     ss.session.random_state = 5
 
 with ss.sidebar():
-    ss.write("当前随机种子: @random_state")
-    ss.button("更新随机种子", onclick=shuffle_random)
-    ss.button("重置随机种子", onclick=reset_random_state)
+    ss.write("Current Random Seed: @random_state")
+    ss.button("Update Random Seed", onclick=shuffle_random)
+    ss.space("mb-4")
+    ss.button("Reset Random Seed", onclick=reset_random_state)
