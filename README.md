@@ -2,7 +2,7 @@
 
 **Build Interactive Web Apps with Python.**
 
-SimpleStart is a Python framework designed for developers, data analysts, and engineers who want to build reactive web applications without writing HTML, CSS, or JavaScript. It abstracts away the complexity of modern web standards, allowing you to focus purely on Python logic and data.
+SimpleStart is a Python framework designed for developers and data analysts who want to build reactive web apps without touching HTML, CSS, or JavaScript. It handles the complexity of modern web standards for you, allowing you to focus purely on Python logic and data.
 
 ## Online Help
 
