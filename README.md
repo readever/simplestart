@@ -55,7 +55,7 @@ Here are some examples of what you can build with SimpleStart:
 ### 1. Machine Learning Demo
 
 - **Description**: Iris classification demo using the KNN algorithm.
-- **Online Demo**: <a href="http://www.simplestart.cc/demos/ml-playground" target="_blank">View Demo</a>
+- **Online Demo**: [View Demo](https://simplestart-iris-predict.ms.show/)
 - **Source Code**: [Source](Demo/Iris%20Predict)
 
 
