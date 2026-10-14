@@ -18,8 +18,7 @@ SimpleStart is a Python framework designed for developers and data analysts who 
 ## 🚀 Why SimpleStart?
 
 - **Event-driven — no full-page reruns**: Interactions fire targeted callbacks (`onclick`, `onchange`) that update only the affected elements. Your script is **not** re-executed from top to bottom on every click, so apps stay fast and predictable as they grow.
-- **Fine-grained reactivity**: Bind Python variables straight into the UI with `@@variable`. Change the variable inside a callback — only that element updates. No manual refreshes, no full-page redraws.
-- **Layered state management**: Per-user state (`ss.session`), shared app state (`ss.state`) and cross-page storage (`ss.store`) — pick the right scope without extra plumbing.
+- **Two-way reactive binding**: Bind `ss.state` properties directly to component parameters (or `@@variable` in text). Change a value anywhere — form inputs write back too — and every bound element updates instantly. No wiring, no refreshes.
 - **Pure Python, end to end**: Tables, forms, charts, layouts and media — all from Python. No HTML, CSS, JavaScript, or frontend build tools.
 - **Rich, modern components**: A comprehensive built-in component library with a clean, responsive UI out of the box.
 
