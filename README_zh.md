@@ -109,4 +109,4 @@ ss examples/01_hello.py
 
 ## 许可证
 
-SimpleStart 为专有软件，© readever 保留所有权利。本仓库中的示例和教程仅供学习使用。许可相关问题请提交 [issue](https://github.com/readever/simplestart/issues) 。
+SimpleStart **免费使用**——安装后即可构建个人或商业应用，无需任何费用。框架以专有许可发布（© readever），仅要求不二次分发、不逆向工程框架本身。本仓库中的示例和教程仅供学习使用。许可相关问题请提交 [issue](https://github.com/readever/simplestart/issues) 。

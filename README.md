@@ -99,7 +99,7 @@ A complete machine learning workflow (data exploration, training, prediction) bu
 
 ## License
 
-SimpleStart is proprietary software, © readever — all rights reserved. The examples and tutorials in this repository are provided for learning purposes. For licensing questions, open an [issue](https://github.com/readever/simplestart/issues).
+SimpleStart is **free to use** — install it and build personal or commercial applications at no cost. It is distributed under a proprietary license (© readever) that simply asks you not to redistribute or reverse-engineer the framework itself. The examples and tutorials in this repository are provided for learning purposes. For licensing questions, open an [issue](https://github.com/readever/simplestart/issues).
 
 
 
