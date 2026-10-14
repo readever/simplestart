@@ -1,0 +1,31 @@
+/Users/williamyu/PycharmProjects/simplestream/myspace/github/simplestart/LICENSE
+SimpleStart Proprietary License
+
+Copyright (c) 2026 readever. All rights reserved.
+
+1. Ownership
+   SimpleStart is proprietary software owned by readever. The framework
+   itself is distributed exclusively through the Python Package Index
+   (https://pypi.org/project/simplestart/).
+
+2. Permitted Use
+   You may install and use SimpleStart via pip to build and operate your
+   own applications, whether personal or commercial.
+
+3. Restrictions
+   You may NOT redistribute, resell, sublicense, reverse engineer, or
+   decompile the SimpleStart framework or any part of its compiled or
+   source form, nor remove any copyright or proprietary notices.
+
+4. Repository Content
+   Examples and tutorials in this repository are provided for learning
+   purposes and may be freely referenced and adapted for your own apps.
+
+5. No Warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+   CLAIM, DAMAGES OR OTHER LIABILITY.
+
+6. Contact
+   For commercial licensing questions, open an issue at
+   https://github.com/readever/simplestart/issues

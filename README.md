@@ -15,13 +15,13 @@ SimpleStart is a Python framework designed for developers and data analysts who 
 - **Documentation (English)**: <https://www.simplestart.cc/>
 - **文档（中文）**: <https://www.simplestart.cc/zh>
 
-## 🚀 Key Features
+## 🚀 Why SimpleStart?
 
-- **Pure Python Development**: Build fully functional web interfaces using only Python code. No frontend build tools or knowledge required.
-- **Reactive Data Binding**: The UI automatically updates when your Python variables change, making state management effortless.
-- **Rich Component Library**: Comes with a comprehensive set of pre-built components, including tables, forms, buttons, layouts, and media elements.
-- **Event-Driven Architecture**: Easily handle user interactions with simple event handlers like ```onclick``` and ```onchange``` bindings.
-- **Modern Web Standards**: Built on top of modern web technologies to ensure high performance and a native-like user experience.
+- **Event-driven — no full-page reruns**: Interactions fire targeted callbacks (`onclick`, `onchange`) that update only the affected elements. Your script is **not** re-executed from top to bottom on every click, so apps stay fast and predictable as they grow.
+- **Fine-grained reactivity**: Bind Python variables straight into the UI with `@@variable`. Change the variable inside a callback — only that element updates. No manual refreshes, no full-page redraws.
+- **Layered state management**: Per-user state (`ss.session`), shared app state (`ss.state`) and cross-page storage (`ss.store`) — pick the right scope without extra plumbing.
+- **Pure Python, end to end**: Tables, forms, charts, layouts and media — all from Python. No HTML, CSS, JavaScript, or frontend build tools.
+- **Rich, modern components**: A comprehensive built-in component library with a clean, responsive UI out of the box.
 
 ## ⚡ Quick Start
 
@@ -85,6 +85,16 @@ Here are some examples of what you can build with SimpleStart:
 A complete machine learning workflow (data exploration, training, prediction) built with SimpleStart.
 
 👉 Try it online: [English](https://modelscope.cn/studios/simplestart/Iris_Predict) · [中文](https://modelscope.cn/studios/simplestart/Iris_Predict_cn)
+
+## 📚 Resources
+
+- 📖 **Documentation**: [English](https://www.simplestart.cc/) · [中文](https://www.simplestart.cc/zh)
+- 📦 **PyPI**: [pypi.org/project/simplestart](https://pypi.org/project/simplestart/)
+- 🐛 **Feedback**: bug reports and feature requests → [GitHub Issues](https://github.com/readever/simplestart/issues)
+
+## License
+
+SimpleStart is proprietary software, © readever — all rights reserved. The examples and tutorials in this repository are provided for learning purposes. For licensing questions, open an [issue](https://github.com/readever/simplestart/issues).
 
 
 
