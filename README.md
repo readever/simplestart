@@ -60,6 +60,22 @@ ss app.py
 
 Access your app in your browser at `http://localhost:8000`.
 
+## 📖 Learn the Basics in 5 Examples
+
+The [`examples/`](./examples) folder contains five tiny, complete apps — each under 30 lines. Clone this repository and run any of them:
+
+```bash
+ss examples/01_hello.py
+```
+
+| # | Example | What you'll learn |
+|---|---|---|
+| 1 | [01_hello.py](./examples/01_hello.py) | Write text, buttons and event callbacks |
+| 2 | [02_state.py](./examples/02_state.py) | Reactive session state with `@@variable` binding |
+| 3 | [03_form.py](./examples/03_form.py) | Build forms with inputs, sliders and cards |
+| 4 | [04_data.py](./examples/04_data.py) | Turn Python data into tables and cards |
+| 5 | [05_chart.py](./examples/05_chart.py) | Draw interactive charts with one function call |
+
 ## Demo
 
 Here are some examples of what you can build with SimpleStart:
