@@ -8,7 +8,7 @@
 
 SimpleStart is a Python framework designed for developers and data analysts who want to build reactive web apps without touching HTML, CSS, or JavaScript. It handles the complexity of modern web standards for you, allowing you to focus purely on Python logic and data.
 
-> **Note**: This repository hosts documentation, demo apps and the issue tracker for SimpleStart. The framework itself is distributed via [PyPI](https://pypi.org/project/simplestart/). Bug reports and feature requests are welcome in [Issues](https://github.com/readever/simplestart/issues).
+> **Note**: This repository hosts examples, tutorials and the issue tracker for SimpleStart. The framework itself is distributed via [PyPI](https://pypi.org/project/simplestart/). Bug reports and feature requests are welcome in [Issues](https://github.com/readever/simplestart/issues).
 
 ## Online Help
 
@@ -80,14 +80,11 @@ ss examples/01_hello.py
 
 Here are some examples of what you can build with SimpleStart:
 
-### 1. Machine Learning Demo — Iris Classification (KNN)
+### Iris Classification (KNN)
 
 A complete machine learning workflow (data exploration, training, prediction) built with SimpleStart.
 
-| Language | Online Demo | Source Code |
-|---|---|---|
-| English | [Iris Predict](https://modelscope.cn/studios/simplestart/Iris_Predict) | [Demo/Iris Predict](./Demo/Iris%20Predict) |
-| 中文 | [鸢尾花分类](https://modelscope.cn/studios/simplestart/Iris_Predict_cn) | [Chinese_Demo/Iris Predict](./Chinese_Demo/Iris%20Predict) |
+👉 Try it online: [English](https://modelscope.cn/studios/simplestart/Iris_Predict) · [中文](https://modelscope.cn/studios/simplestart/Iris_Predict_cn)
 
 
 
