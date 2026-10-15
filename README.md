@@ -10,7 +10,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/simplestart)](https://pypi.org/project/simplestart/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/simplestart)](https://pypi.org/project/simplestart/)
-[![Documentation](https://img.shields.io/badge/docs-simplestart.cc-blue)](https://www.simplestart.cc/)
+[![Documentation](https://img.shields.io/badge/docs-simplestart.cc-blue)](http://www.simplestart.cc/)
 
 SimpleStart is a Python framework designed for developers and data analysts who want to build reactive web apps without touching HTML, CSS, or JavaScript. It handles the complexity of modern web standards for you, allowing you to focus purely on Python logic and data.
 
@@ -18,8 +18,8 @@ SimpleStart is a Python framework designed for developers and data analysts who 
 
 ## Online Help
 
-- **Documentation (English)**: <https://www.simplestart.cc/>
-- **文档（中文）**: <https://www.simplestart.cc/zh>
+- **Documentation (English)**: <http://www.simplestart.cc/>
+- **文档（中文）**: <http://www.simplestart.cc/zh>
 
 ## 🚀 Why SimpleStart?
 
@@ -93,7 +93,7 @@ A complete machine learning workflow (data exploration, training, prediction) bu
 
 ## 📚 Resources
 
-- 📖 **Documentation**: [English](https://www.simplestart.cc/) · [中文](https://www.simplestart.cc/zh)
+- 📖 **Documentation**: [English](http://www.simplestart.cc/) · [中文](http://www.simplestart.cc/zh)
 - 📦 **PyPI**: [pypi.org/project/simplestart](https://pypi.org/project/simplestart/)
 - 🐛 **Feedback**: bug reports and feature requests → [GitHub Issues](https://github.com/readever/simplestart/issues)
 

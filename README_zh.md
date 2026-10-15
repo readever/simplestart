@@ -10,7 +10,7 @@
 
 [![PyPI - Version](https://img.shields.io/pypi/v/simplestart)](https://pypi.org/project/simplestart/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/simplestart)](https://pypi.org/project/simplestart/)
-[![Documentation](https://img.shields.io/badge/docs-simplestart.cc-blue)](https://www.simplestart.cc/zh)
+[![Documentation](https://img.shields.io/badge/docs-simplestart.cc-blue)](http://www.simplestart.cc/zh)
 
 SimpleStart 是一个 Python 框架，面向希望不接触 HTML、CSS、JavaScript 就能构建响应式 Web 应用的开发者和数据分析师。它为你处理现代 Web 标准的复杂性，让你专注于 Python 逻辑和数据。
 
@@ -18,9 +18,9 @@ SimpleStart 是一个 Python 框架，面向希望不接触 HTML、CSS、JavaScr
 
 ## 在线帮助
 
-- **文档（中文）**：<https://www.simplestart.cc/zh>
+- **文档（中文）**：<http://www.simplestart.cc/zh>
 
-- **Documentation (English)**: <https://www.simplestart.cc/>
+- **Documentation (English)**: <http://www.simplestart.cc/>
 
 ## 🚀 为什么选择 SimpleStart？
 
@@ -101,7 +101,7 @@ ss examples/01_hello.py
 
 ## 📚 资源
 
-- 📖 **文档**：[中文](https://www.simplestart.cc/zh) · [English](https://www.simplestart.cc/)
+- 📖 **文档**：[中文](http://www.simplestart.cc/zh) · [English](http://www.simplestart.cc/)
 
 - 📦 **PyPI**：[pypi.org/project/simplestart](https://pypi.org/project/simplestart/)
 
