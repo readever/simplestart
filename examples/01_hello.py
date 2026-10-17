@@ -11,4 +11,4 @@ ss.write("Click the button and a message will be written to the page.")
 def myclick():
     ss.write("Welcome to SimpleStart. :smile:")
 
-ss.button("Click Me", onclick=myclick)
+ss.button("Click Me", type="primary", onclick=myclick)

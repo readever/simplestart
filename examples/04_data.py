@@ -13,10 +13,11 @@ mydata = [
     {"Month": "Mar", "Sales": 150, "Profit": 45},
 ]
 
-ss.table(tableData=mydata, stripe=True)
+with ss.card(style="max-width:520px"):
+    ss.table(tableData=mydata, stripe=True)
 
 ss.space()
 
-with ss.card(style="max-width:480px"):
+with ss.card(style="max-width:520px"):
     ss.write("### Monthly Report")
-    ss.write("March profit margin: **30%** - a record high. :chart_with_upwards_trend:")
+    ss.text("March profit margin: <b>30%</b> - a record high. 📈", type="success")
