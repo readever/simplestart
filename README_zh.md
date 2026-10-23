@@ -14,7 +14,15 @@
 
 SimpleStart 是一个 Python 框架，面向希望不接触 HTML、CSS、JavaScript 就能构建响应式 Web 应用的开发者和数据分析师。它为你处理现代 Web 标准的复杂性，让你专注于 Python 逻辑和数据。
 
-> **说明**：本仓库托管 SimpleStart 的示例、教程和 Issue 跟踪。框架本身通过 [PyPI](https://pypi.org/project/simplestart/) 分发。欢迎在 [Issues](https://github.com/readever/simplestart/issues) 提交 Bug 报告和功能建议。
+> **说明**：本仓库托管 SimpleStart 的示例、教程和 Issue 跟踪。框架本身通过 [PyPI](https://pypi.org/project/simplestart/) 分发。欢迎在 [Issues](https://github.com/reedever/simplestart/issues) 提交 Bug 报告和功能建议。
+
+## ✨ 界面预览
+
+| 按钮与事件 | 响应式绑定 |
+|:---:|:---:|
+| ![](docs/images/ex01.png) | ![](docs/images/ex02.png) |
+| **表格与数据** | **图表** |
+| ![](docs/images/ex04.png) | ![](docs/images/ex05.png) |
 
 ## 在线帮助
 
@@ -89,6 +97,8 @@ ss examples/01_hello.py
 | 4 | [04_data.py](./examples/04_data.py) | 把 Python 数据变成表格和卡片 |
 | 5 | [05_chart.py](./examples/05_chart.py) | 一次函数调用绘制交互式图表 |
 
+> 中文版教程（判分测验 / 登录）见 [`tutorials_zh/`](./tutorials_zh)；英文版见 [`tutorials/`](./tutorials)。
+
 ## 演示
 
 以下是用 SimpleStart 构建的应用示例：
@@ -109,4 +119,4 @@ ss examples/01_hello.py
 
 ## 许可证
 
-SimpleStart **免费使用**——安装后即可构建个人或商业应用，无需任何费用。框架以专有许可发布（© readever），仅要求不二次分发、不逆向工程框架本身。本仓库中的示例和教程仅供学习使用。许可相关问题请提交 [issue](https://github.com/readever/simplestart/issues) 。
+SimpleStart **免费使用**——安装后即可构建个人或商业应用，无需任何费用。框架以专有许可发布（© readever），仅要求不二次分发、不逆向工程框架本身。本仓库中的示例和教程可自由使用、修改与再分发（见 [LICENSE](./LICENSE)）。许可相关问题请提交 [issue](https://github.com/readever/simplestart/issues) 。

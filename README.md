@@ -16,6 +16,14 @@ SimpleStart is a Python framework designed for developers and data analysts who 
 
 > **Note**: This repository hosts examples, tutorials and the issue tracker for SimpleStart. The framework itself is distributed via [PyPI](https://pypi.org/project/simplestart/). Bug reports and feature requests are welcome in [Issues](https://github.com/readever/simplestart/issues).
 
+## ✨ What It Looks Like
+
+| Buttons & events | Reactive binding |
+|:---:|:---:|
+| ![](docs/images/ex01.png) | ![](docs/images/ex02.png) |
+| **Tables & data** | **Charts** |
+| ![](docs/images/ex04.png) | ![](docs/images/ex05.png) |
+
 ## Online Help
 
 - **Documentation (English)**: <http://www.simplestart.cc/>
@@ -80,6 +88,8 @@ ss examples/01_hello.py
 | 3 | [03_form.py](./examples/03_form.py) | Build forms with inputs, sliders and cards |
 | 4 | [04_data.py](./examples/04_data.py) | Turn Python data into tables and cards |
 | 5 | [05_chart.py](./examples/05_chart.py) | Draw interactive charts with one function call |
+
+> 中文版教程（判分测验 / 登录）见 [`tutorials_zh/`](./tutorials_zh)。
 
 ## Demo
 
