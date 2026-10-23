@@ -8,8 +8,9 @@ Copyright (c) 2026 readever. All rights reserved.
    (https://pypi.org/project/simplestart/).
 
 2. Permitted Use
-   You may install and use SimpleStart via pip to build and operate your
-   own applications, whether personal or commercial.
+   You may install and use SimpleStart free of charge, for both
+   personal and commercial purposes, to build and operate your
+   own applications.
 
 3. Restrictions
    You may NOT redistribute, resell, sublicense, reverse engineer, or
@@ -26,5 +27,6 @@ Copyright (c) 2026 readever. All rights reserved.
    CLAIM, DAMAGES OR OTHER LIABILITY.
 
 6. Contact
-   For commercial licensing questions, open an issue at
+   For questions, feedback, or commercial support inquiries,
+   open an issue at
    https://github.com/readever/simplestart/issues
